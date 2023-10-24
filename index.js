@@ -17,6 +17,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/css"));
 
+//Creating File Variables
 const main = fs.readFileSync(process.cwd() + "/index.html", "utf-8");
 const login = fs.readFileSync(process.cwd() + "/login.html", "utf-8");
 const signup = fs.readFileSync(process.cwd() + "/signup.html", "utf-8");
