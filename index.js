@@ -194,7 +194,7 @@ app.post("/appointment", async function(req, res) {
       port: 587,
       auth: {
           user: 'carissa18@ethereal.email',
-          pass: '1uvwZ1zKCYBY3vSEaf'
+          pass: process.env.PASS
       },
       tls: {
         rejectUnauthorized: false
