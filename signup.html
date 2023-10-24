@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SignUp </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-nobg.png">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        label, p {
+            font-size: 15px;
+        }
+
+        form {
+            width: 300px;
+            margin: auto;
+            position: relative;
+            right: 170px;
+            top: 70px;
+        }
+
+        #sub {
+            margin-left: 35px;
+        }
+
+        .log {
+            position: relative;
+            animation-name: example;
+            animation-duration: 1s;
+            z-index: 2;
+        }
+
+        @keyframes example {
+            0%   {left:200px; top:0px;}
+            100%  {left:0px; top:0px;}
+        }
+
+
+        .log1 {
+            position: relative;
+            animation-name: example1;
+            animation-duration: 1s;
+        }
+
+        @keyframes example1 {
+            0%   {left:400px; top:0px;}
+            100%  {left:180px; top:0px;}
+        }
+
+        .log2 {
+            position: relative;
+            animation-name: example3;
+            animation-duration: 1s;
+            z-index: 2;
+        }
+
+        @keyframes example3 {
+            0%   {left:190px; top:0px;}
+            100%  {left:-7px; top:0px;}
+        }
+
+        .log3 {
+            font-size: 1.25rem;
+            position: relative;
+            animation-name: example4;
+            animation-duration: 1s;
+            z-index: 2;
+        }
+
+        @keyframes example4 {
+            0%   {left:380px; top:0px;}
+            100%  {left:180px; top:0px;}
+        }
+
+        .img {
+            position: relative;
+            animation-name: example2;
+            animation-duration: 1s;
+        }
+
+        @keyframes example2 {
+            0%   {left:-100px; top:140px;}
+            100%  {left:120px; top:140px;}
+        }
+
+        .col-10 {
+            padding: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container" style=" padding-left: 330px; margin-top: -10px;">
+            <div class="row">
+                <div class="col-2" style="padding-bottom: 100px;" class="img">
+                    <form action="homepage" method="POST">
+                        <h3 class="log">SIGNUP</h3>
+                        <p class="log">Don't have an account yet? <a href="login">Login</a></p>
+                        <label class="log">Name</label><br>
+                        <input type="text" name="username" placeholder="Enter Name" class="log" required><br><br>
+                        <label class="log">Email Address</label><br>
+                        <input type="email" name="email" placeholder="you@example.com" class="log" required><br><br>
+                        <label class="log">Password</label><br>
+                        <input type="password" name="password" placeholder="Enter 6 characters or more" class="log"  required><br><br>
+                        <label class="log">Confirm Password</label><br>
+                        <input type="password" name="confirmpassword" placeholder="Enter 6 characters or more" class="log" required><br><br>
+                        <input type="submit" id="sub1" value="LOGIN" class="log2" style="position: relative;right: 8px;">
+                        <br><br>
+                        <p style="color: #9e0036; position:relative; font-style: bold; align-self: center; margin-left: -3rem;
+                        left: 30%;" class="log3">{{%%ERROR-DEF%%}}</p>
+                    </form>
+                </div>
+                <div class="col-10" style="position: relative; left: 80px; background-color: white;">
+                    <img src="images/signup.avif" style="width: 300px; position: relative; top: 140px; left: 120px;" class="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
