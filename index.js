@@ -214,8 +214,29 @@ app.post("/appointment", async function(req, res) {
           }
       });
     });
+
+    const mailData = {
+      from: '"Appointment Request" <carissa18@ethereal.email>', // sender address
+        to: "jeeval.shah158@nmims.edu.in", // list of receivers
+        subject: "Appointment Request!", // Subject line
+        text: "", // plain text body
+        html: output, // html body
+    };
+  
+  await new Promise((resolve, reject) => {
+      // send mail
+      transporter.sendMail(mailData, (err, info) => {
+          if (err) {
+              console.error(err);
+              reject(err);
+          } else {
+            console.log("Message sent: %s", info.messageId);
+              resolve(info);
+          }
+      });
+  });
     
-    async function main() {
+    /*async function main() {
       const info = await transporter.sendMail({
         from: '"Appointment Request" <carissa18@ethereal.email>', // sender address
         to: "jeeval.shah158@nmims.edu.in", // list of receivers
@@ -225,8 +246,8 @@ app.post("/appointment", async function(req, res) {
       });
 
       console.log("Message sent: %s", info.messageId);
-    }
-    main().catch(console.error);
+    }*/
+    //main().catch(console.error);
 
     const Appointmentstorage = new AppointmentModel({
       Name: user,
