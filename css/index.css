@@ -1,8 +1,12 @@
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     overflow-x: hidden;
 }
 
-.navbarr{
+.navbarr {
     background-color: white !important;
     font-size: 15px;
     padding-top: 10px;
@@ -13,24 +17,29 @@ body{
     border-bottom-right-radius: 30px;
     padding-bottom: 10px;
 }
-.m{
+
+.m {
     text-decoration: none;
     color: #22272b;
     margin-right: 30px;
 }
-.m:hover{
+
+.m:hover {
     text-decoration: none;
     color: #22272b;
     margin-right: 30px;
 }
-#sign,#log{
+
+#sign, #log {
     color: #22272b;
     margin-left: 7px;
 }
-#sign:hover,#log:hover{
+
+#sign:hover, #log:hover {
     text-decoration: none;
 }
-.sub{
+
+.sub {
     width: 230px;
     height: 42px;
     border-radius: 200px;
@@ -40,65 +49,78 @@ body{
     font-weight: 800;
     margin-top: 15px;
 }
-.sub:hover{
+
+.sub:hover {
     background-color: white;
     color: #9e0036;
 }
-.navbarr p{
+
+.navbarr p {
     padding-left:40px;
     margin-bottom: 0;
     font-family:  'Rubik', sans-serif;
 }
-.ni{
+
+.ni {
     color: #9e0036;
     background-color: #f8f7f3;
     padding: 25px;
     border-radius: 50%;
     font-size: 20px;
 }
-.fir{
+
+.fir {
     padding-left: 150px;
 }
-.M{
+
+.M {
     padding-left:30px;
 }
-.mail{
+
+.mail {
     text-decoration: none;
     color: black;
     margin-left: 25px;
 }
-.mail:hover{
+
+.mail:hover {
     text-decoration: none;
     color: black;
 }
-.mail1{
+
+.mail1 {
     margin-left: -15px;
 }
-.icn{
+
+.icn {
     font-size: 15px;
     color: #71758d;
     background-color: #f8f7f3;
     padding: 10px;
     border-radius: 50%;
 }
-.icn:hover{
+
+.icn:hover {
     background-color: #ffdc78;
     color: #22272b;
 }
 
 /* services */
-.service i{
+.service i {
     font-size: 50px;
     padding: 20px;
 }
-.service1{
+
+.service1 {
     background-color: #9e0036;
     padding: 80px 50px;
     color: white;
 }
-.service1 p{
+
+.service1 p {
     color:#ffffffb6;
 }
+
 .service1 .ba{
     color: white;
 }
