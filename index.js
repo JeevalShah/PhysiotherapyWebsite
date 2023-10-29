@@ -15,10 +15,10 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + "/css"));
+app.use(express.static(__dirname));
 
 //Creating File Variables
-const main = fs.readFileSync(process.cwd() + "/index.html", "utf-8");
+const main = fs.readFileSync(process.cwd() + "/home.html", "utf-8");
 const login = fs.readFileSync(process.cwd() + "/login.html", "utf-8");
 const signup = fs.readFileSync(process.cwd() + "/signup.html", "utf-8");
 const appointment = fs.readFileSync(process.cwd() + "/appointment.html", "utf-8");
